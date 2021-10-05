@@ -1,0 +1,14 @@
+#' gibberlite: a simple package for detecting gibberish text.
+#'
+#'A Markov chain is trained to count how often bigrams, a combination of two letters pairs, occur in natural text.
+#'Based on the probability that certain letters appear next to each other in natural text, an algorithm evaluates
+#'whether text can be classified as either gibberish or not. For example, a sentence like 'The dog ate its cake'
+#'is considered natural, but text like 'asdfg' is not.
+#'
+#' @section For a quick start:
+#'\code{\link[gibberlite]{is_gibberish}} \cr
+#'
+#' @docType package
+#' @name gibberlite
+NULL
+#> NULL

@@ -1,13 +1,13 @@
 Package: gibberlite
-Title: What the Package Does (One Line, Title Case)
+Title: a base-r package to detect gibberish text in sentences
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Glenn",
+           family = "Hiemstra",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
+           email = "glenn.hiemstra@gmail.com",
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: r-package to detect presence of gibberish text.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -15,3 +15,6 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Depends: 
     R (>= 2.10)
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

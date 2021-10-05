@@ -1,0 +1,68 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# gibberlite
+
+```{r, echo = FALSE, results='asis'}
+cat(
+	badger::badge_devel("Glender/gibberlite", "purple"),
+	badger::badge_github_actions("rossellhayes/ipa"),
+	badger::badge_codecov("rcannood/princurve"),
+	badger::badge_code_size("Glender/gibberlite")
+)
+```
+
+## :arrow_double_down: Installation
+
+You can install the development version of gibberlite from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("Glender/gibberlite")
+```
+## Overview
+
+With the gibberlite package you can sssess whether a sentence contains gibberish words. A Markov chain
+inspects the sequence of vowels and consonents to estimate whether a sentence consists of natural words. Therefore,
+words like 'asdfg' and 'dfrgfh' are considered unnatural and are classified as gibberish. The accuracy of the classification
+improves when a sentence contains more characters. 
+
+## :book: Usage
+
+```{r}
+library(gibberlite)
+# create vector with character data
+text <- c(
+ "Personally I'm always ready to learn, although I do not always like being taught.",
+ "asdfg",
+ "Computer",
+ "dfhdfghd",
+ "I love to walk."
+)
+
+# assess if text is gibber
+is_gibberish(text)
+```
+
+## :speech_balloon:
+
+The gibberlite packages implements a very simple model. 
+If you want a state-of-the-art solution, see the gibber package: https://github.com/Glender/gibber
+
+
+
+
+
+
