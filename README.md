@@ -46,7 +46,7 @@ is_gibberish(text)
 #> [1] FALSE  TRUE FALSE  TRUE FALSE
 ```
 
-## :speech\_balloon:
+## :speech\_balloon: Looking for something more fancy?
 
 The gibberlite packages implements a very simple model. If you want a
 state-of-the-art solution, see the gibber package:

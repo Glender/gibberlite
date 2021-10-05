@@ -56,7 +56,7 @@ text <- c(
 is_gibberish(text)
 ```
 
-## :speech_balloon:
+## :speech_balloon: Looking for something more fancy?
 
 The gibberlite packages implements a very simple model. 
 If you want a state-of-the-art solution, see the gibber package: https://github.com/Glender/gibber
