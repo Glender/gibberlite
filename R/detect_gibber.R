@@ -64,7 +64,6 @@ is_gibberish <- function(text, threshold=0.00345){
     }
     probs[[i]] <- mean(results)
   }
-
   logicals <- ifelse(probs> threshold, FALSE, TRUE)
   return(logicals)
 }
